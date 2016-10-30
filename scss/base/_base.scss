@@ -8,39 +8,10 @@ html {
 	padding: 0;
 }
 
+body {
+	font-family: 'Patua One', cursive;
+}
+
 li {
 	list-style: none;
-}
-
-.border {
-	border: 1px solid #DDD;
-}
-
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-h1, h2, h3, h4, button, input, textarea {
-	font-family: Rubik, Arial, sans-serif;
-}
-
-div, p, span, ul, li, a {
-	font-family: Rubik, Arial, sans-serif;
-	font-weight: 300;
-}
-
-.white-fill {
-	fill: #FFF;
-	opacity: 0.6;
-}
-
-.opaque {
-	opacity: 1;
-}
-
-.flex-align-center {
-	display: flex;
-	align-content: center;
 }
