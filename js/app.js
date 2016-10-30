@@ -1,7 +1,7 @@
 var $getMovies = $('#get-movies');
 var $movieResults = $('#movie-results');
 var $lightbox = $('.lightbox');
-var apiCall = "http://www.omdbapi.com/?s=star+wars&y=&plot=short&r=json";
+var apiCall = "https://www.omdbapi.com/?s=star+wars&y=&plot=short&r=json";
 var movies = [];
 
 $getMovies.click(function () {
@@ -19,7 +19,7 @@ $('#movie-results').on('click', '> div', function () {
   var index = parseInt($(this).attr('id'));
   var imdb = movies[index].imdbID;
   console.log(imdb);
-  var descriptionCall = "http://www.omdbapi.com/?i=" + imdb + "&plot=short&r=json";
+  var descriptionCall = "https://www.omdbapi.com/?i=" + imdb + "&plot=short&r=json";
   console.log(descriptionCall);
 
   $.getJSON(descriptionCall, function(data) {
