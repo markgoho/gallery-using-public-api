@@ -43,7 +43,7 @@ $('#movie-results').on('click', '> div', function () {
   $lightbox.css('display', 'flex');
 });
 
-$lightbox.not($('.lightbox-result')).click(function() {
+$lightbox.click(function() {
   $lightbox.hide();
   $lightbox.html("");
 });
