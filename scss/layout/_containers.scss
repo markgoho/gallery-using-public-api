@@ -34,6 +34,7 @@ header {
 }
 
 #movie-results {
+	display: none;
 	cursor: pointer;
 	display: flex;
 	flex-wrap: wrap;

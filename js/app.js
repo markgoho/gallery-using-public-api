@@ -4,14 +4,16 @@ var $lightbox = $('.lightbox');
 var apiCall = "https://www.omdbapi.com/?s=star+wars&y=&plot=short&r=json";
 var movies = [];
 
-$getMovies.click(function () {
-  $.getJSON(apiCall, function(data) {
+$.getJSON(apiCall, function(data) {
     console.log(data.Search);
     movies = data.Search;
     $.each(movies, function (key, val) {
       $movieResults.append('<div id=' + key + '><img src="' + val.Poster + '" alt="' + val.Title + ' poster"></div>');
     }); //each
   }); //getJSON
+
+$getMovies.click(function () {
+  $movieResults.css('display', 'flex');
   $getMovies.hide();
 }); //button click
 
@@ -38,7 +40,6 @@ $('#movie-results').on('click', '> div', function () {
           '</div>'
     );
   });
-  
 
   $lightbox.css('display', 'flex');
 });

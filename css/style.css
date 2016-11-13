@@ -40,6 +40,7 @@ header {
   background-color: rgba(0, 0, 0, 0.9); }
 
 #movie-results {
+  display: none;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap; }
